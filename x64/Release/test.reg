@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\ceshi]
+"URL Protocol"="D:\\Project\\ConsoleApplication4\\x64\\Debug\\ConsoleApplication4.exe"
+
+[HKEY_CLASSES_ROOT\ceshi\DefaultIcon]
+@="D:\\Project\\ConsoleApplication4\\x64\\Debug\\ConsoleApplication4.exe,1"
+
+[HKEY_CLASSES_ROOT\ceshi\shell]
+
+[HKEY_CLASSES_ROOT\ceshi\shell\open]
+
+[HKEY_CLASSES_ROOT\ceshi\shell\open\command]
+@="\"D:\\Project\\ConsoleApplication4\\x64\\Debug\\ConsoleApplication4.exe\" \"%1\""
+

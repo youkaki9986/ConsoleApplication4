@@ -1,0 +1,9 @@
+﻿生成启动时间为 2023/4/7 14:41:17。
+     1>项目“D:\Project\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj”在节点 2 上(ResourceCompile 个目标)。
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"x64\Release\ConsoleApplication41.res" ConsoleApplication41.rc 
+     1>已完成生成项目“D:\Project\ConsoleApplication4\ConsoleApplication4\ConsoleApplication4.vcxproj”(ResourceCompile 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.11

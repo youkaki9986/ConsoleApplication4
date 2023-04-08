@@ -1,0 +1,72 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (d55a1954).
+//
+// d:\project\consoleapplication4\consoleapplication4\x64\release\classlibrary.tlh
+//
+// C++ source equivalent of type library ClassLibrary.tlb
+// compiler-generated file created 03/24/23 at 10:22:29 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace ClassLibrary {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("233cbe83-41a6-4971-b5eb-318ca49c40a0"))
+/* LIBID */ __ClassLibrary;
+struct __declspec(uuid("0527007f-bfdf-4c66-b8ec-eb576ed79a37"))
+/* dual interface */ IMyInterface;
+struct /* coclass */ ConnentEDM3;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("0527007f-bfdf-4c66-b8ec-eb576ed79a37"))
+IMyInterface : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ConnentEDM3Res (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall Send (
+        /*[in]*/ BSTR str,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetValue (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall OpenEDM3 (
+        /*[in]*/ BSTR path ) = 0;
+      virtual HRESULT __stdcall CloseSocket ( ) = 0;
+};
+
+struct __declspec(uuid("48ffb090-f59e-4c69-9528-105d0411861e"))
+ConnentEDM3;
+    // interface _Object
+    // [ default ] interface IMyInterface
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_ClassLibrary =
+    {0x233cbe83,0x41a6,0x4971,{0xb5,0xeb,0x31,0x8c,0xa4,0x9c,0x40,0xa0}};
+extern "C" const GUID __declspec(selectany) IID_IMyInterface =
+    {0x0527007f,0xbfdf,0x4c66,{0xb8,0xec,0xeb,0x57,0x6e,0xd7,0x9a,0x37}};
+extern "C" const GUID __declspec(selectany) CLSID_ConnentEDM3 =
+    {0x48ffb090,0xf59e,0x4c69,{0x95,0x28,0x10,0x5d,0x04,0x11,0x86,0x1e}};
+
+} // namespace ClassLibrary
+
+#pragma pack(pop)

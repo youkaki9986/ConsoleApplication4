@@ -1,0 +1,71 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (22b0d878).
+//
+// d:\project\consoleapplication4\consoleapplication4\debug\csapplicationup.tlh
+//
+// C++ source equivalent of type library CSApplicationUp.tlb
+// compiler-generated file created 07/25/22 at 13:51:10 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace CSApplicationUp {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("c245216a-412e-43fd-9c9e-20ec3d88cf1d"))
+/* LIBID */ __CSApplicationUp;
+struct __declspec(uuid("6418109e-d0a8-480e-91c1-cb35b0600cbe"))
+/* dual interface */ IMyInterface;
+struct /* coclass */ Class1;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("6418109e-d0a8-480e-91c1-cb35b0600cbe"))
+IMyInterface : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall ApplicationUp (
+        /*[in]*/ BSTR path ) = 0;
+      virtual HRESULT __stdcall ClientWrite (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall WriteInfo (
+        /*[in]*/ BSTR info,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall ApplicationUp2 (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("401ec77b-11fc-425b-afd5-dd655c103286"))
+Class1;
+    // interface _Object
+    // [ default ] interface IMyInterface
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CSApplicationUp =
+    {0xc245216a,0x412e,0x43fd,{0x9c,0x9e,0x20,0xec,0x3d,0x88,0xcf,0x1d}};
+extern "C" const GUID __declspec(selectany) IID_IMyInterface =
+    {0x6418109e,0xd0a8,0x480e,{0x91,0xc1,0xcb,0x35,0xb0,0x60,0x0c,0xbe}};
+extern "C" const GUID __declspec(selectany) CLSID_Class1 =
+    {0x401ec77b,0x11fc,0x425b,{0xaf,0xd5,0xdd,0x65,0x5c,0x10,0x32,0x86}};
+
+} // namespace CSApplicationUp
+
+#pragma pack(pop)
